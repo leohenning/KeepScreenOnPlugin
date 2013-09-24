@@ -9,7 +9,7 @@
     <license>Apache 2.0</license>
     <keywords>sleep screen lock Keep Screen On</keywords>
 
-    <js-module src="www/keepScreenOn.js" name="KeepScreenOn">
+    <js-module src="www/js/keepScreenOn.js" name="KeepScreenOn">
         <clobbers target="window.keepScreenOn" />
     </js-module>
     
