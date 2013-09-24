@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="com.Kidobi.plugins.KeepScreenOn"
+      version="1.0">
+    <name>KeepScreenOn</name>
+    <description>Function to turn on and off screen sleep timer</description>
+    <license>Apache 2.0</license>
+    <keywords>sleep screen lock Keep Screen On</keywords>
+
+    <js-module src="www/keepScreenOn.js" name="KeepScreenOn">
+        <clobbers target="window.keepScreenOn" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="KeepScreenOn" >
+                <param name="android-package" value="com.Kidobi.plugins.KeepScreenOn"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/KeepScreenOn.java" target-dir="src/com/Kidobi/plugins" />
+    </platform>
+    
+</plugin>
