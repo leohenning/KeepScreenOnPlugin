@@ -1,10 +1,10 @@
 var keepScreenOn = {
-CancelKeepScreenOn: function(){
+    CancelKeepScreenOn: function () {
             cordova.exec(null, null, "KeepScreenOn", "CancelKeepScreenOn", [""]);
-    }
+    },
     
-KeepScreenOn: function(){
+    KeepScreenOn: function () {
             cordova.exec(null, null, "KeepScreenOn", "KeepScreenOn", [""]);
     }
-}
+};
 module.exports = keepScreenOn;
